@@ -5,7 +5,7 @@
     <h1>Request Logger - Features</h1>
     <ul>
         <li>Have middleware that logs all incoming requests and their response times.</li>
-        <li>Middleware can be easily toggled on and off via a configuration setting.</li>
+        <li>Middleware can be easily toggled on and off via a settings menu.</li>
         <li>Log data will be written to an SQLite database.</li>
     </ul>
 </div>

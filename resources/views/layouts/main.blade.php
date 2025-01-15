@@ -8,11 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Samnad S">
     <meta name="generator" content="Hugo 0.122.0">
     <title>Request Logger- @yield('title', 'Default')</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
 
 
 
@@ -106,7 +105,7 @@
     @stack('styles')
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
             <path
@@ -187,7 +186,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     @if($install_status == 0)
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('')}}">Install</a>
+                        <a class="nav-link" href="{{route('install_view')}}">Install</a>
                     </li>
                     @else
                     <li class="nav-item">
@@ -214,12 +213,12 @@
     <main class="container">
         @yield('content')
     </main>
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer">
         <div class="container">
-            <span class="text-muted"><b>Machine Test By Samnad. S</b> for Timesworld Media and Technology Solutions Pvt.
-                Ltd</span>
+          <span class="text-muted"><b>Machine Test By Samnad. S</b> for Timesworld Media and Technology Solutions Pvt.
+            Ltd</span></span>
         </div>
-    </footer>
+      </footer>
     <script>
         const _base_url = '{{url('')}}/';
     </script>

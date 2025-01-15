@@ -5,7 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Middleware\RequestLogging;
 
 Route::middleware([RequestLogging::class])->group(function () {
-    Route::get('/', [HomeController::class, 'install_show']);
+    Route::get('/', [HomeController::class, 'home']);
+    Route::get('/install_view', [HomeController::class, 'install_show'])->name('install_view');
     Route::get('/home', [HomeController::class, 'home'])->name('home');
     Route::get('settings', [HomeController::class, 'settings'])->name('settings');
     Route::get('logs', [HomeController::class, 'logs'])->name('logs');
