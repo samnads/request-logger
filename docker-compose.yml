@@ -9,7 +9,6 @@ services:
     container_name: request-logger-samnads
     ports:
       - 8000:8000
-
     networks:
       - application
     entrypoint: ['/bin/sh', '-c']
