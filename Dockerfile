@@ -9,5 +9,5 @@ WORKDIR /
 COPY . /
 RUN composer install
 
-CMD php artisan serve --host=0.0.0.0 --port=8055
-EXPOSE 8055
+CMD php artisan serve --host=0.0.0.0 --port=8000
+EXPOSE 8000
